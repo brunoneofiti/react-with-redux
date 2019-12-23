@@ -49,6 +49,9 @@ export const remove = (todo) => {
     }
 }
 
+/**
+ * USando multi, sao multiplas ações (neste caso duas), com um Action Creator
+ */
 export const clear = () => {
     return [{ type: 'TODO_CLEAR' }, search()]
 }
